@@ -25,5 +25,10 @@ namespace tracerco_api.Services
         {
             return WeatherForecasts.ToArray();
         }
+
+        public WeatherForecast GetHottestForecast()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
