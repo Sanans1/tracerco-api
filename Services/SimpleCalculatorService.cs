@@ -2,7 +2,7 @@
 
 namespace tracerco_api.Services
 {
-    public class SimpleCalculator : ISimpleCalculator
+    public class SimpleCalculatorService : ISimpleCalculator
     {
         public int Add(int start, int amount)
         {
