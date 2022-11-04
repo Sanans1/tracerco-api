@@ -5,12 +5,12 @@ namespace tracerco_api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CalculatorController : ControllerBase
+    public class SimpleCalculatorController : ControllerBase
     {
-        private readonly ILogger<CalculatorController> _logger;
+        private readonly ILogger<SimpleCalculatorController> _logger;
         private readonly ISimpleCalculator _simpleCalculator;
 
-        public CalculatorController(ILogger<CalculatorController> logger, ISimpleCalculator simpleCalculator)
+        public SimpleCalculatorController(ILogger<SimpleCalculatorController> logger, ISimpleCalculator simpleCalculator)
         {
             _logger = logger;
             _simpleCalculator = simpleCalculator;
