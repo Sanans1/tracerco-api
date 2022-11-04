@@ -28,7 +28,7 @@ namespace tracerco_api.Services
 
         public WeatherForecast GetHottestForecast()
         {
-            throw new NotImplementedException();
+            return WeatherForecasts.MaxBy(v => v.TemperatureC) ?? new WeatherForecast();
         }
     }
 }

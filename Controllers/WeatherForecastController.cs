@@ -23,11 +23,11 @@ namespace tracerco_api.Controllers
             return _forecastService.GetAllForecasts();
         }
 
-        //[HttpGet]
-        //[Route("GetHottestForecast")]
-        //public WeatherForecast GetHottestForecast()
-        //{
-        //    return _forecastService.GetHottestForecast();
-        //}
+        [HttpGet]
+        [Route("GetHottestForecast")]
+        public WeatherForecast GetHottestForecast()
+        {
+            return _forecastService.GetHottestForecast();
+        }
     }
 }
